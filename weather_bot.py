@@ -37,6 +37,15 @@ nlp = spacy.load('en_core_web_sm')
 gc = geonamescache.GeonamesCache()  
 
 def correct(message: str) -> str:
+  '''
+  corrects any spelling mistakes with most likely suggested word
+
+  Arguments:
+  - message: the message provided
+
+  Returns:
+  - the corrected string
+  '''
   spell_check.set_text(message)
 
   for mistake in spell_check:
@@ -46,6 +55,16 @@ def correct(message: str) -> str:
   return spell_check.get_text()
 
 def get_first_city(message: str) -> str:
+  '''
+  returns the first city in the message
+
+  Arguments:
+  - message: the message provided
+
+  Returns:
+  - a city if found else empty string
+  '''
+
   corrected = correct(message)
   true_case = truecase.get_true_case(corrected)
   doc = nlp(true_case)
@@ -60,21 +79,42 @@ def get_first_city(message: str) -> str:
       
 url = 'http://api.openweathermap.org/data/2.5/weather?'
 @slack_event_adapter.on('message')
-def get_weather(payload):
+def weatherbot(payload):
+  '''gets the weather if message in payload contains a city'''
+
+  # get event
   event = payload.get('event', {})
+  message = event.get('text')
 
-  if bot_id != event.get('user'):
-    client.chat_postMessage(channel=event.get('channel'), text=event.get('text'))      
+  # if the userid of last message is not this bot's and has content
+  if bot_id != event.get('user') and message:
 
-    city = get_first_city(event.get('text'))
+    # echo back message
+    print(message)
+    client.chat_postMessage(channel=event.get('channel'), text=message)
+     
+    # find a city
+    city = get_first_city(message)
     if city:
+      print(f'Getting weather for {city}')
+
       params = {'q': city, 'appid': os.environ['WEATHER_API_KEY']}
       response = requests.get(url, params)
+      print(response.status_code, response.text)
 
+      # on success
       if response.status_code == 200:
-        client.chat_postMessage(channel=event.get('channel'), text=response.text)
+        json = response.json()
+        weather = f'Today\'s outlook: {json["weather"][0]["main"]} - {json["weather"][0]["description"]}'
+        temperature = f'Feels like {json["main"]["feels_like"]} with a humidity of {json["main"]["humidity"]}'
+
+        client.chat_postMessage(channel=event.get('channel'), text=f'{weather}\n{temperature}')
+
+      # no city found
       elif response.status_code == 404:
         client.chat_postMessage(channel=event.get('channel'), text='oops couldn\'t find the city')
+
+      # catch-all
       else:
         client.chat_postMessage(channel=event.get('channel'), text='unknown error')
 
