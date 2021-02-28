@@ -5,4 +5,4 @@ Learning to use webhooks and the slack API to create a slack bot
 1. Pip - https://pip.pypa.io/en/stable/installing/
 
 # Install Dependencies
-`python -m pip install -r ./requirements.txt
+`python -m pip install -r ./requirements.txt`
