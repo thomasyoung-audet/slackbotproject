@@ -1,0 +1,2 @@
+ZENHUB: https://app.zenhub.com/workspaces/cps847-6016d19f4bf2220012cab05a/board?repos=334691179
+GITHUB: https://github.com/thomasyoung-audet/slackbotproject
