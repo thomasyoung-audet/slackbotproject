@@ -80,6 +80,7 @@ def get_first_city(message: str) -> str:
 url = 'http://api.openweathermap.org/data/2.5/weather?'
 @slack_event_adapter.on('message')
 def weatherbot(payload):
+  print(payload)
   '''gets the weather if message in payload contains a city'''
 
   # get event
@@ -87,7 +88,7 @@ def weatherbot(payload):
   message = event.get('text')
 
   # if the userid of last message is not this bot's and has content
-  if bot_id != event.get('user') and message:
+  if event.get('subtype') != 'message_deleted' and bot_id != event.get('user') and message:
 
     # echo back message
     print(message)
