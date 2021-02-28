@@ -8,4 +8,4 @@ Learning to use webhooks and the slack API to create a slack bot
 `python -m pip install -r ./requirements.txt`
 
 # Bot Locations
-**Assignment 01** - ./bots/weather_bot.py
+**Assignment 01** - `slackbotproject/bots/weather_bot.py`
