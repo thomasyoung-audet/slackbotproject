@@ -1,14 +1,25 @@
+sudo: required
 language: python
-python:
-  - "3.6"      # current default Python on Travis CI
-  - "3.7"
-# command to install dependencies
-install:
-  - pip install -r requirements.txt
-  - pip install coverage
-# command to run tests
+services:
+- docker
+
 script:
-  - coverage run unittest_flaskapi.py
-# for codecov
+- docker image build -t imjonlam/cps847 .
+
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  #log in to docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  #take built images and push to DOcker hub
+  - docker push imjonlam/cps847
+  #test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "cps847"
+  env: "cps847-env"
+  bucket_name: "elasticbeanstalk-us-east-1-862341512431"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY

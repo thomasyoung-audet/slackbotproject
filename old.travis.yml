@@ -1,0 +1,14 @@
+language: python
+python:
+  - "3.6"      # current default Python on Travis CI
+  - "3.7"
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+  - pip install coverage
+# command to run tests
+script:
+  - coverage run unittest_flaskapi.py
+# for codecov
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
