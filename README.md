@@ -1,3 +1,4 @@
+[![codecov](https://codecov.io/gh/thomasyoung-audet/slackbotproject/branch/main/graph/badge.svg?token=XS56WK4Q8N)](https://codecov.io/gh/thomasyoung-audet/slackbotproject)
 # slackbotproject
 Learning to use webhooks and the slack API to create a slack bot 
 

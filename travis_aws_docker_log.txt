@@ -1,0 +1,618 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 076a2988-f222-45f1-81bb-038f42809d32@1.worker-org-6895d44d89-98cdc.gce-production-4
+version: 6.2.22 https://github.com/travis-ci/worker/tree/858cb91994a513269f2fe9782c15fc113e966231
+instance: travis-job-e1bef0fd-fdd5-4859-8a3f-7e1c8d2c7e59 travis-ci-sardonyx-xenial-1593004276-4d46c6b3 (via amqp)
+startup: 6.244473581s
+travis_fold:end:worker_info[0Ktravis_time:start:38595d5c[0Ktravis_time:end:38595d5c:start=1618042697050947847,finish=1618042697194601932,duration=143654085,event=no_world_writable_dirs[0Ktravis_time:start:1e1f2888[0Ktravis_time:end:1e1f2888:start=1618042697197238658,finish=1618042697203113320,duration=5874662,event=setup_filter[0Ktravis_time:start:231d4da4[0Ktravis_time:end:231d4da4:start=1618042697206785587,finish=1618042697214237728,duration=7452141,event=agent[0Ktravis_time:start:20338fa4[0Ktravis_time:end:20338fa4:start=1618042697216792590,finish=1618042697218797133,duration=2004543,event=check_unsupported[0Ktravis_time:start:13c392ca[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build dist: xenial
+Build id: 766563910
+Job id: 766563911
+Runtime kernel version: 4.15.0-1077-gcp
+travis-build version: 091d532a
+[34m[1mBuild image provisioning date and time[0m
+Wed Jun 24 13:36:52 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+3f92a99 https://github.com/travis-ci/travis-cookbooks/tree/3f92a99
+[34m[1mgit version[0m
+git version 2.27.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.42.1 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2019-11-12 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.30, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.13 (Ubuntu 10.13-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Mar 18 2020 14:06:17)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.35.3
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.88
+[34m[1mphpenv version[0m
+rbenv 1.1.2-30-gc879cb0
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.19
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.26
+9.5.22
+9.6.18
+[34m[1mRedis version[0m
+redis-server 6.0.5
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.6 compiled on July 20 2018
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.3 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.21.0
+v11.0.0
+v12.18.1
+v4.9.1
+v6.17.1
+v8.12.0
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:13c392ca:start=1618042697221303497,finish=1618042697226196895,duration=4893398,event=show_system_info[0Ktravis_time:start:30c0f4bf[0Ktravis_time:end:30c0f4bf:start=1618042697228792175,finish=1618042697240196976,duration=11404801,event=rm_riak_source[0Ktravis_time:start:2e7e8633[0Ktravis_time:end:2e7e8633:start=1618042697243500311,finish=1618042697250575826,duration=7075515,event=fix_rwky_redis[0Ktravis_time:start:07a6951b[0Ktravis_time:end:07a6951b:start=1618042697254392562,finish=1618042697930259507,duration=675866945,event=wait_for_network[0Ktravis_time:start:26131110[0Ktravis_time:end:26131110:start=1618042697934149523,finish=1618042698144094889,duration=209945366,event=update_apt_keys[0Ktravis_time:start:243b3dea[0Ktravis_time:end:243b3dea:start=1618042698148290432,finish=1618042698197416002,duration=49125570,event=fix_hhvm_source[0Ktravis_time:start:02a46530[0Ktravis_time:end:02a46530:start=1618042698201828028,finish=1618042698206161043,duration=4333015,event=update_mongo_arch[0Ktravis_time:start:01a47b74[0Ktravis_time:end:01a47b74:start=1618042698210514169,finish=1618042698251049344,duration=40535175,event=fix_sudo_enabled_trusty[0Ktravis_time:start:02125618[0Ktravis_time:end:02125618:start=1618042698255507589,finish=1618042698258230771,duration=2723182,event=update_glibc[0Ktravis_time:start:1cb5ad17[0Ktravis_time:end:1cb5ad17:start=1618042698264347896,finish=1618042698272469399,duration=8121503,event=clean_up_path[0Ktravis_time:start:0c743eb0[0Ktravis_time:end:0c743eb0:start=1618042698276705459,finish=1618042698284059005,duration=7353546,event=fix_resolv_conf[0Ktravis_time:start:02bfe0a8[0Ktravis_time:end:02bfe0a8:start=1618042698288134145,finish=1618042698296279178,duration=8145033,event=fix_etc_hosts[0Ktravis_time:start:06200ac2[0Ktravis_time:end:06200ac2:start=1618042698300410727,finish=1618042698309428002,duration=9017275,event=fix_mvn_settings_xml[0Ktravis_time:start:2aad374b[0Ktravis_time:end:2aad374b:start=1618042698315859101,finish=1618042698325174304,duration=9315203,event=no_ipv6_localhost[0Ktravis_time:start:13417770[0Ktravis_time:end:13417770:start=1618042698328602737,finish=1618042698330847584,duration=2244847,event=fix_etc_mavenrc[0Ktravis_time:start:1dcfe5f4[0Ktravis_time:end:1dcfe5f4:start=1618042698334312716,finish=1618042698338169433,duration=3856717,event=fix_wwdr_certificate[0Ktravis_time:start:0f2ee9dc[0Ktravis_time:end:0f2ee9dc:start=1618042698344414643,finish=1618042698367076672,duration=22662029,event=put_localhost_first[0Ktravis_time:start:000eff1d[0Ktravis_time:end:000eff1d:start=1618042698371680801,finish=1618042698374982664,duration=3301863,event=home_paths[0Ktravis_time:start:229b64f4[0Ktravis_time:end:229b64f4:start=1618042698382568047,finish=1618042698394736495,duration=12168448,event=disable_initramfs[0Ktravis_time:start:0261efd0[0Ktravis_time:end:0261efd0:start=1618042698398874987,finish=1618042698719175252,duration=320300265,event=disable_ssh_roaming[0Ktravis_time:start:0cdd3970[0Ktravis_time:end:0cdd3970:start=1618042698723729516,finish=1618042698726052367,duration=2322851,event=debug_tools[0Ktravis_time:start:05f52b3a[0Ktravis_time:end:05f52b3a:start=1618042698732632745,finish=1618042698736742181,duration=4109436,event=uninstall_oclint[0Ktravis_time:start:0455fa5b[0Ktravis_time:end:0455fa5b:start=1618042698743466165,finish=1618042698746982228,duration=3516063,event=rvm_use[0Ktravis_time:start:0934042c[0Ktravis_time:end:0934042c:start=1618042698751092138,finish=1618042698758324324,duration=7232186,event=rm_etc_boto_cfg[0Ktravis_time:start:0337d468[0Ktravis_time:end:0337d468:start=1618042698761721718,finish=1618042698766855025,duration=5133307,event=rm_oraclejdk8_symlink[0Ktravis_time:start:26379441[0Ktravis_time:end:26379441:start=1618042698770800843,finish=1618042698859650794,duration=88849951,event=enable_i386[0Ktravis_time:start:00891494[0Ktravis_time:end:00891494:start=1618042698864772033,finish=1618042698869990256,duration=5218223,event=update_rubygems[0Ktravis_time:start:01d3e698[0Ktravis_time:end:01d3e698:start=1618042698878633590,finish=1618042699653612135,duration=774978545,event=ensure_path_components[0Ktravis_time:start:0b4d2bea[0Ktravis_time:end:0b4d2bea:start=1618042699660459478,finish=1618042699663518640,duration=3059162,event=redefine_curl[0Ktravis_time:start:07da3e36[0Ktravis_time:end:07da3e36:start=1618042699670217842,finish=1618042699764548428,duration=94330586,event=nonblock_pipe[0Ktravis_time:start:15aa5ca7[0Ktravis_time:end:15aa5ca7:start=1618042699771744895,finish=1618042705799529397,duration=6027784502,event=apt_get_update[0Ktravis_time:start:1f861cc0[0Ktravis_time:end:1f861cc0:start=1618042705805920875,finish=1618042705809596467,duration=3675592,event=deprecate_xcode_64[0Ktravis_time:start:10efdab8[0Ktravis_time:end:10efdab8:start=1618042705815876198,finish=1618042708531018962,duration=2715142764,event=update_heroku[0Ktravis_time:start:16605ea9[0Ktravis_time:end:16605ea9:start=1618042708535935808,finish=1618042708538085982,duration=2150174,event=shell_session_update[0Ktravis_time:start:0c39d780[0Ktravis_fold:start:docker_mtu_and_registry_mirrors[0Ktravis_fold:end:docker_mtu_and_registry_mirrors[0Ktravis_time:end:0c39d780:start=1618042708542822682,finish=1618042711121527064,duration=2578704382,event=set_docker_mtu_and_registry_mirrors[0Ktravis_time:start:14b972ec[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:14b972ec:start=1618042711127443529,finish=1618042711192554691,duration=65111162,event=resolvconf[0Ktravis_time:start:09ce3f76[0Ktravis_time:end:09ce3f76:start=1618042711199451611,finish=1618042711335427825,duration=135976214,event=maven_central_mirror[0Ktravis_time:start:0197a4bd[0Ktravis_time:end:0197a4bd:start=1618042711339295837,finish=1618042711423634479,duration=84338642,event=maven_https[0Ktravis_time:start:04baa2f8[0Ktravis_fold:start:services[0Ktravis_time:start:103ef462[0K$ sudo systemctl start docker
+travis_time:end:103ef462:start=1618042711435992322,finish=1618042711446593752,duration=10601430,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:103ef462:start=1618042711435992322,finish=1618042714451791319,duration=3015798997,event=services[0Ktravis_time:start:1f746950[0Ktravis_time:end:1f746950:start=1618042714456330113,finish=1618042714458990547,duration=2660434,event=fix_ps4[0Ktravis_time:start:0907f4f2[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:17978edc[0K$ git clone --depth=50 --branch=main https://github.com/thomasyoung-audet/slackbotproject.git thomasyoung-audet/slackbotproject
+Cloning into 'thomasyoung-audet/slackbotproject'...
+travis_time:end:17978edc:start=1618042714467980147,finish=1618042715051476083,duration=583495936,event=checkout[0K$ cd thomasyoung-audet/slackbotproject
+$ git checkout -qf 1c5300d0a66ce29eb2a338f6734e0e83d90d73f1
+travis_fold:end:git.checkout[0K
+travis_time:end:17978edc:start=1618042714467980147,finish=1618042715063824174,duration=595844027,event=checkout[0Ktravis_time:start:0adb16d0[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export CODECOV_TOKEN=[secure]
+$ export AWS_ACCESS_KEY=[secure]
+$ export AWS_SECRET_KEY=[secure]
+$ export DOCKER_ID=[secure]
+$ export DOCKER_PASSWORD=[secure]
+
+travis_time:end:0adb16d0:start=1618042715068578982,finish=1618042715078336365,duration=9757383,event=env[0Ktravis_time:start:06d7d628[0K$ source ~/virtualenv/python3.6/bin/activate
+travis_time:end:06d7d628:start=1618042715082421065,finish=1618042715087551007,duration=5129942,event=[0K$ python --version
+Python 3.6.7
+$ pip --version
+pip 20.1.1 from /home/travis/virtualenv/python3.6.7/lib/python3.6/site-packages/pip (python 3.6)
+[33;1mPip version 20.3 introduces changes to the dependency resolver that may affect your software.[0m
+[33;1mWe advise you to consider testing the upcoming changes, which may be introduced in a future Travis CI build image update.[0m
+[33;1mSee https://pip.pypa.io/en/latest/user_guide/#changes-to-the-pip-dependency-resolver-in-20-2-2020 for more information.[0m
+
+travis_fold:start:install[0Ktravis_time:start:0f30d56c[0K$ pip install -r requirements.txt
+Collecting Flask==0.12
+  Downloading Flask-0.12-py2.py3-none-any.whl (82 kB)
+Collecting itsdangerous>=0.21
+  Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+Collecting Werkzeug>=0.7
+  Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+Collecting click>=2.0
+  Downloading click-7.1.2-py2.py3-none-any.whl (82 kB)
+Collecting Jinja2>=2.4
+  Downloading Jinja2-2.11.3-py2.py3-none-any.whl (125 kB)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp36-cp36m-manylinux2010_x86_64.whl (32 kB)
+Installing collected packages: itsdangerous, Werkzeug, click, MarkupSafe, Jinja2, Flask
+Successfully installed Flask-0.12 Jinja2-2.11.3 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.2 itsdangerous-1.1.0
+travis_time:end:0f30d56c:start=1618042715956443449,finish=1618042717791566141,duration=1835122692,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:041cb40a[0K$ docker image build -t [secure]/cps847 .
+Sending build context to Docker daemon  763.9kB
+Step 1/6 : FROM python:3.6.1
+3.6.1: Pulling from library/python
+9f0706ba7422: Pulling fs layer
+d3942a742d22: Pulling fs layer
+c6575234aef3: Pulling fs layer
+8af5f3519ed2: Pulling fs layer
+27868e2bc876: Pulling fs layer
+31b5a7a11b39: Pulling fs layer
+138d7953531e: Pulling fs layer
+8774a5bb1fe9: Pulling fs layer
+27868e2bc876: Waiting
+31b5a7a11b39: Waiting
+138d7953531e: Waiting
+8774a5bb1fe9: Waiting
+8af5f3519ed2: Waiting
+9f0706ba7422: Retrying in 5 seconds
+c6575234aef3: Retrying in 5 seconds
+d3942a742d22: Retrying in 5 seconds
+9f0706ba7422: Retrying in 4 seconds
+c6575234aef3: Retrying in 4 seconds
+d3942a742d22: Retrying in 4 seconds
+9f0706ba7422: Retrying in 3 seconds
+c6575234aef3: Retrying in 3 seconds
+d3942a742d22: Retrying in 3 seconds
+9f0706ba7422: Retrying in 2 seconds
+c6575234aef3: Retrying in 2 seconds
+d3942a742d22: Retrying in 2 seconds
+9f0706ba7422: Retrying in 1 second
+c6575234aef3: Retrying in 1 second
+d3942a742d22: Retrying in 1 second
+d3942a742d22: Retrying in 10 seconds
+c6575234aef3: Retrying in 10 seconds
+9f0706ba7422: Retrying in 10 seconds
+d3942a742d22: Retrying in 9 seconds
+9f0706ba7422: Retrying in 9 seconds
+c6575234aef3: Retrying in 9 seconds
+d3942a742d22: Retrying in 8 seconds
+9f0706ba7422: Retrying in 8 seconds
+c6575234aef3: Retrying in 8 seconds
+d3942a742d22: Retrying in 7 seconds
+9f0706ba7422: Retrying in 7 seconds
+c6575234aef3: Retrying in 7 seconds
+9f0706ba7422: Retrying in 6 seconds
+d3942a742d22: Retrying in 6 seconds
+c6575234aef3: Retrying in 6 seconds
+9f0706ba7422: Retrying in 5 seconds
+c6575234aef3: Retrying in 5 seconds
+d3942a742d22: Retrying in 5 seconds
+d3942a742d22: Retrying in 4 seconds
+9f0706ba7422: Retrying in 4 seconds
+c6575234aef3: Retrying in 4 seconds
+d3942a742d22: Retrying in 3 seconds
+9f0706ba7422: Retrying in 3 seconds
+c6575234aef3: Retrying in 3 seconds
+9f0706ba7422: Retrying in 2 seconds
+c6575234aef3: Retrying in 2 seconds
+d3942a742d22: Retrying in 2 seconds
+d3942a742d22: Retrying in 1 second
+c6575234aef3: Retrying in 1 second
+9f0706ba7422: Retrying in 1 second
+d3942a742d22: Retrying in 15 seconds
+9f0706ba7422: Retrying in 15 seconds
+c6575234aef3: Retrying in 15 seconds
+d3942a742d22: Retrying in 14 seconds
+c6575234aef3: Retrying in 14 seconds
+9f0706ba7422: Retrying in 14 seconds
+d3942a742d22: Retrying in 13 seconds
+9f0706ba7422: Retrying in 13 seconds
+c6575234aef3: Retrying in 13 seconds
+d3942a742d22: Retrying in 12 seconds
+c6575234aef3: Retrying in 12 seconds
+9f0706ba7422: Retrying in 12 seconds
+d3942a742d22: Retrying in 11 seconds
+9f0706ba7422: Retrying in 11 seconds
+c6575234aef3: Retrying in 11 seconds
+d3942a742d22: Retrying in 10 seconds
+9f0706ba7422: Retrying in 10 seconds
+c6575234aef3: Retrying in 10 seconds
+d3942a742d22: Retrying in 9 seconds
+c6575234aef3: Retrying in 9 seconds
+9f0706ba7422: Retrying in 9 seconds
+d3942a742d22: Retrying in 8 seconds
+c6575234aef3: Retrying in 8 seconds
+9f0706ba7422: Retrying in 8 seconds
+d3942a742d22: Retrying in 7 seconds
+c6575234aef3: Retrying in 7 seconds
+9f0706ba7422: Retrying in 7 seconds
+d3942a742d22: Retrying in 6 seconds
+c6575234aef3: Retrying in 6 seconds
+9f0706ba7422: Retrying in 6 seconds
+d3942a742d22: Retrying in 5 seconds
+9f0706ba7422: Retrying in 5 seconds
+c6575234aef3: Retrying in 5 seconds
+d3942a742d22: Retrying in 4 seconds
+c6575234aef3: Retrying in 4 seconds
+9f0706ba7422: Retrying in 4 seconds
+d3942a742d22: Retrying in 3 seconds
+9f0706ba7422: Retrying in 3 seconds
+c6575234aef3: Retrying in 3 seconds
+d3942a742d22: Retrying in 2 seconds
+c6575234aef3: Retrying in 2 seconds
+9f0706ba7422: Retrying in 2 seconds
+d3942a742d22: Retrying in 1 second
+9f0706ba7422: Retrying in 1 second
+c6575234aef3: Retrying in 1 second
+c6575234aef3: Retrying in 20 seconds
+d3942a742d22: Retrying in 20 seconds
+9f0706ba7422: Retrying in 20 seconds
+d3942a742d22: Retrying in 19 seconds
+c6575234aef3: Retrying in 19 seconds
+9f0706ba7422: Retrying in 19 seconds
+d3942a742d22: Retrying in 18 seconds
+c6575234aef3: Retrying in 18 seconds
+9f0706ba7422: Retrying in 18 seconds
+d3942a742d22: Retrying in 17 seconds
+c6575234aef3: Retrying in 17 seconds
+9f0706ba7422: Retrying in 17 seconds
+c6575234aef3: Retrying in 16 seconds
+d3942a742d22: Retrying in 16 seconds
+9f0706ba7422: Retrying in 16 seconds
+d3942a742d22: Retrying in 15 seconds
+c6575234aef3: Retrying in 15 seconds
+9f0706ba7422: Retrying in 15 seconds
+d3942a742d22: Retrying in 14 seconds
+c6575234aef3: Retrying in 14 seconds
+9f0706ba7422: Retrying in 14 seconds
+d3942a742d22: Retrying in 13 seconds
+c6575234aef3: Retrying in 13 seconds
+9f0706ba7422: Retrying in 13 seconds
+c6575234aef3: Retrying in 12 seconds
+d3942a742d22: Retrying in 12 seconds
+9f0706ba7422: Retrying in 12 seconds
+c6575234aef3: Retrying in 11 seconds
+d3942a742d22: Retrying in 11 seconds
+9f0706ba7422: Retrying in 11 seconds
+d3942a742d22: Retrying in 10 seconds
+c6575234aef3: Retrying in 10 seconds
+9f0706ba7422: Retrying in 10 seconds
+c6575234aef3: Retrying in 9 seconds
+d3942a742d22: Retrying in 9 seconds
+9f0706ba7422: Retrying in 9 seconds
+d3942a742d22: Retrying in 8 seconds
+c6575234aef3: Retrying in 8 seconds
+9f0706ba7422: Retrying in 8 seconds
+c6575234aef3: Retrying in 7 seconds
+d3942a742d22: Retrying in 7 seconds
+9f0706ba7422: Retrying in 7 seconds
+c6575234aef3: Retrying in 6 seconds
+d3942a742d22: Retrying in 6 seconds
+9f0706ba7422: Retrying in 6 seconds
+c6575234aef3: Retrying in 5 seconds
+d3942a742d22: Retrying in 5 seconds
+9f0706ba7422: Retrying in 5 seconds
+c6575234aef3: Retrying in 4 seconds
+d3942a742d22: Retrying in 4 seconds
+9f0706ba7422: Retrying in 4 seconds
+d3942a742d22: Retrying in 3 seconds
+c6575234aef3: Retrying in 3 seconds
+9f0706ba7422: Retrying in 3 seconds
+d3942a742d22: Retrying in 2 seconds
+c6575234aef3: Retrying in 2 seconds
+9f0706ba7422: Retrying in 2 seconds
+c6575234aef3: Retrying in 1 second
+d3942a742d22: Retrying in 1 second
+9f0706ba7422: Retrying in 1 second
+8af5f3519ed2: Retrying in 5 seconds
+27868e2bc876: Retrying in 5 seconds
+31b5a7a11b39: Verifying Checksum
+31b5a7a11b39: Download complete
+138d7953531e: Verifying Checksum
+138d7953531e: Download complete
+8774a5bb1fe9: Verifying Checksum
+8774a5bb1fe9: Download complete
+27868e2bc876: Retrying in 4 seconds
+8af5f3519ed2: Retrying in 4 seconds
+27868e2bc876: Retrying in 3 seconds
+8af5f3519ed2: Retrying in 3 seconds
+8af5f3519ed2: Retrying in 2 seconds
+27868e2bc876: Retrying in 2 seconds
+8af5f3519ed2: Retrying in 1 second
+27868e2bc876: Retrying in 1 second
+27868e2bc876: Retrying in 10 seconds
+8af5f3519ed2: Retrying in 10 seconds
+27868e2bc876: Retrying in 9 seconds
+8af5f3519ed2: Retrying in 9 seconds
+27868e2bc876: Retrying in 8 seconds
+8af5f3519ed2: Retrying in 8 seconds
+27868e2bc876: Retrying in 7 seconds
+8af5f3519ed2: Retrying in 7 seconds
+27868e2bc876: Retrying in 6 seconds
+8af5f3519ed2: Retrying in 6 seconds
+27868e2bc876: Retrying in 5 seconds
+8af5f3519ed2: Retrying in 5 seconds
+27868e2bc876: Retrying in 4 seconds
+8af5f3519ed2: Retrying in 4 seconds
+27868e2bc876: Retrying in 3 seconds
+8af5f3519ed2: Retrying in 3 seconds
+27868e2bc876: Retrying in 2 seconds
+8af5f3519ed2: Retrying in 2 seconds
+27868e2bc876: Retrying in 1 second
+8af5f3519ed2: Retrying in 1 second
+27868e2bc876: Retrying in 15 seconds
+8af5f3519ed2: Retrying in 15 seconds
+27868e2bc876: Retrying in 14 seconds
+8af5f3519ed2: Retrying in 14 seconds
+27868e2bc876: Retrying in 13 seconds
+8af5f3519ed2: Retrying in 13 seconds
+27868e2bc876: Retrying in 12 seconds
+8af5f3519ed2: Retrying in 12 seconds
+27868e2bc876: Retrying in 11 seconds
+8af5f3519ed2: Retrying in 11 seconds
+27868e2bc876: Retrying in 10 seconds
+8af5f3519ed2: Retrying in 10 seconds
+27868e2bc876: Retrying in 9 seconds
+8af5f3519ed2: Retrying in 9 seconds
+27868e2bc876: Retrying in 8 seconds
+8af5f3519ed2: Retrying in 8 seconds
+27868e2bc876: Retrying in 7 seconds
+8af5f3519ed2: Retrying in 7 seconds
+27868e2bc876: Retrying in 6 seconds
+8af5f3519ed2: Retrying in 6 seconds
+27868e2bc876: Retrying in 5 seconds
+8af5f3519ed2: Retrying in 5 seconds
+27868e2bc876: Retrying in 4 seconds
+8af5f3519ed2: Retrying in 4 seconds
+27868e2bc876: Retrying in 3 seconds
+8af5f3519ed2: Retrying in 3 seconds
+27868e2bc876: Retrying in 2 seconds
+8af5f3519ed2: Retrying in 2 seconds
+27868e2bc876: Retrying in 1 second
+8af5f3519ed2: Retrying in 1 second
+8af5f3519ed2: Retrying in 20 seconds
+27868e2bc876: Retrying in 20 seconds
+8af5f3519ed2: Retrying in 19 seconds
+27868e2bc876: Retrying in 19 seconds
+8af5f3519ed2: Retrying in 18 seconds
+27868e2bc876: Retrying in 18 seconds
+8af5f3519ed2: Retrying in 17 seconds
+27868e2bc876: Retrying in 17 seconds
+8af5f3519ed2: Retrying in 16 seconds
+27868e2bc876: Retrying in 16 seconds
+8af5f3519ed2: Retrying in 15 seconds
+27868e2bc876: Retrying in 15 seconds
+8af5f3519ed2: Retrying in 14 seconds
+27868e2bc876: Retrying in 14 seconds
+8af5f3519ed2: Retrying in 13 seconds
+27868e2bc876: Retrying in 13 seconds
+8af5f3519ed2: Retrying in 12 seconds
+27868e2bc876: Retrying in 12 seconds
+8af5f3519ed2: Retrying in 11 seconds
+27868e2bc876: Retrying in 11 seconds
+8af5f3519ed2: Retrying in 10 seconds
+27868e2bc876: Retrying in 10 seconds
+8af5f3519ed2: Retrying in 9 seconds
+27868e2bc876: Retrying in 9 seconds
+8af5f3519ed2: Retrying in 8 seconds
+27868e2bc876: Retrying in 8 seconds
+8af5f3519ed2: Retrying in 7 seconds
+27868e2bc876: Retrying in 7 seconds
+8af5f3519ed2: Retrying in 6 seconds
+27868e2bc876: Retrying in 6 seconds
+8af5f3519ed2: Retrying in 5 seconds
+27868e2bc876: Retrying in 5 seconds
+8af5f3519ed2: Retrying in 4 seconds
+27868e2bc876: Retrying in 4 seconds
+8af5f3519ed2: Retrying in 3 seconds
+27868e2bc876: Retrying in 3 seconds
+8af5f3519ed2: Retrying in 2 seconds
+27868e2bc876: Retrying in 2 seconds
+8af5f3519ed2: Retrying in 1 second
+27868e2bc876: Retrying in 1 second
+3.6.1: Pulling from library/python
+9f0706ba7422: Pulling fs layer
+d3942a742d22: Pulling fs layer
+c6575234aef3: Pulling fs layer
+8af5f3519ed2: Pulling fs layer
+27868e2bc876: Pulling fs layer
+31b5a7a11b39: Pulling fs layer
+138d7953531e: Pulling fs layer
+8774a5bb1fe9: Pulling fs layer
+8af5f3519ed2: Waiting
+27868e2bc876: Waiting
+31b5a7a11b39: Waiting
+138d7953531e: Waiting
+8774a5bb1fe9: Waiting
+d3942a742d22: Verifying Checksum
+d3942a742d22: Download complete
+c6575234aef3: Verifying Checksum
+c6575234aef3: Download complete
+9f0706ba7422: Verifying Checksum
+9f0706ba7422: Download complete
+27868e2bc876: Verifying Checksum
+27868e2bc876: Download complete
+138d7953531e: Verifying Checksum
+138d7953531e: Download complete
+31b5a7a11b39: Verifying Checksum
+31b5a7a11b39: Download complete
+8774a5bb1fe9: Verifying Checksum
+8774a5bb1fe9: Download complete
+8af5f3519ed2: Verifying Checksum
+8af5f3519ed2: Download complete
+9f0706ba7422: Pull complete
+d3942a742d22: Pull complete
+c6575234aef3: Pull complete
+8af5f3519ed2: Pull complete
+27868e2bc876: Pull complete
+31b5a7a11b39: Pull complete
+138d7953531e: Pull complete
+8774a5bb1fe9: Pull complete
+Digest: sha256:98fb5342195e69ffda54a7584ed202be71154c7ef64931da5bec5a41739c78d5
+Status: Downloaded newer image for python:3.6.1
+ ---> 955d0c3b1bb2
+Step 2/6 : WORKDIR /docker_group_40
+ ---> Running in 540f9a1d6c15
+Removing intermediate container 540f9a1d6c15
+ ---> 7e35f29bd634
+Step 3/6 : ADD . /docker_group_40
+ ---> e65c255b015c
+Step 4/6 : RUN pip install -r requirements.txt
+ ---> Running in 24ff8f4b60f5
+Collecting Flask==0.12 (from -r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/0e/e9/37ee66dde483dceefe45bb5e92b387f990d4f097df40c400cf816dcebaa4/Flask-0.12-py2.py3-none-any.whl (82kB)
+Collecting click>=2.0 (from Flask==0.12->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/d2/3d/fa76db83bf75c4f8d338c2fd15c8d33fdd7ad23a9b5e57eb6c5de26b430e/click-7.1.2-py2.py3-none-any.whl (82kB)
+Collecting itsdangerous>=0.21 (from Flask==0.12->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
+Collecting Jinja2>=2.4 (from Flask==0.12->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/7e/c2/1eece8c95ddbc9b1aeb64f5783a9e07a286de42191b7204d67b7496ddf35/Jinja2-2.11.3-py2.py3-none-any.whl (125kB)
+Collecting Werkzeug>=0.7 (from Flask==0.12->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/cc/94/5f7079a0e00bd6863ef8f1da638721e9da21e5bacee597595b318f71d62e/Werkzeug-1.0.1-py2.py3-none-any.whl (298kB)
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.4->Flask==0.12->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/b2/5f/23e0023be6bb885d00ffbefad2942bc51a620328ee910f64abe5a8d18dd1/MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl
+Installing collected packages: click, itsdangerous, MarkupSafe, Jinja2, Werkzeug, Flask
+Successfully installed Flask-0.12 Jinja2-2.11.3 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.2 itsdangerous-1.1.0
+[91mYou are using pip version 9.0.1, however version 21.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+[0mRemoving intermediate container 24ff8f4b60f5
+ ---> 52b517422de7
+Step 5/6 : EXPOSE 5000
+ ---> Running in db7f63c67921
+Removing intermediate container db7f63c67921
+ ---> a2944c514063
+Step 6/6 : CMD ["python","app.py"]
+ ---> Running in d51ae7fdadc7
+Removing intermediate container d51ae7fdadc7
+ ---> bb7455a57d04
+Successfully built bb7455a57d04
+Successfully tagged [secure]/cps847:latest
+travis_time:end:041cb40a:start=1618042717797587939,finish=1618042841203648339,duration=123406060400,event=script[0K[32;1mThe command "docker image build -t [secure]/cps847 ." exited with 0.[0m
+
+travis_fold:start:after_success.1[0Ktravis_time:start:0e5cd769[0K$ echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+travis_time:end:0e5cd769:start=1618042841211123116,finish=1618042841706675332,duration=495552216,event=after_success[0Ktravis_fold:end:after_success.1[0Ktravis_fold:start:after_success.2[0Ktravis_time:start:35fc7fd2[0K$ docker push [secure]/cps847
+The push refers to repository [docker.io/[secure]/cps847]
+d907d0685fa7: Preparing
+36416669b261: Preparing
+6732026a6d21: Preparing
+4b78214a873e: Preparing
+17bf9b56042d: Preparing
+ad9fa7c9d0aa: Preparing
+a3cf95a0a769: Preparing
+8b375be9de19: Preparing
+0f8361255952: Preparing
+71ce2dc7f761: Preparing
+0d960f1d4fba: Preparing
+ad9fa7c9d0aa: Waiting
+a3cf95a0a769: Waiting
+8b375be9de19: Waiting
+0f8361255952: Waiting
+71ce2dc7f761: Waiting
+0d960f1d4fba: Waiting
+4b78214a873e: Layer already exists
+17bf9b56042d: Layer already exists
+ad9fa7c9d0aa: Layer already exists
+a3cf95a0a769: Layer already exists
+8b375be9de19: Layer already exists
+0f8361255952: Layer already exists
+71ce2dc7f761: Layer already exists
+0d960f1d4fba: Layer already exists
+36416669b261: Pushed
+6732026a6d21: Pushed
+d907d0685fa7: Pushed
+latest: digest: sha256:edbcaa473dab0e9036e32502ae0514d72fd587b63631ca7aa537407ce176f6e4 size: 2635
+travis_time:end:35fc7fd2:start=1618042841711673684,finish=1618042846995523572,duration=5283849888,event=after_success[0Ktravis_fold:end:after_success.2[0Ktravis_fold:start:dpl_0[0Ktravis_time:start:1846a488[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+Successfully installed dpl-1.10.16
+1 gem installed
+travis_time:end:1846a488:start=1618042848062624442,finish=1618042849328949354,duration=1266324912,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:066c8fd0[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+Successfully installed jmespath-1.4.0
+Successfully installed aws-eventstream-1.1.1
+Successfully installed aws-sigv4-1.2.3
+AWS SDK For Ruby V2 has been marked as deprecated. Please upgrade to AWS SDK For Ruby V3.
+Successfully installed aws-sdk-core-2.11.632
+AWS SDK For Ruby V2 has been marked as deprecated. Please upgrade to AWS SDK For Ruby V3.
+Successfully installed aws-sdk-resources-2.11.632
+AWS SDK For Ruby V2 has been marked as deprecated. Please upgrade to AWS SDK For Ruby V3.
+Successfully installed aws-sdk-2.11.632
+Successfully installed rubyzip-1.3.0
+Successfully installed dpl-elastic_beanstalk-1.10.16
+8 gems installed
+
+!!! AWS Elastic Beanstalk support is experimental !!!
+
+
+travis_fold:end:dpl.1travis_fold:start:dpl.2[33mPreparing deploy[0m
+Cleaning up git repository with `git stash --all`. If you need build artifacts for deployment, set `deploy.skip_cleanup: true`. See https://docs.travis-ci.com/user/deployment#Uploading-Files-and-skip_cleanup.
+No local changes to save
+Version 2 of the Ruby SDK will enter maintenance mode as of November 20, 2020. To continue receiving service updates and new features, please upgrade to Version 3. More information can be found here: https://aws.amazon.com/blogs/developer/deprecation-schedule-for-aws-sdk-for-ruby-v2/
+
+travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
+
+travis_fold:end:dpl.3No stash entries found.
+travis_time:end:066c8fd0:start=1618042849338110268,finish=1618042859438412086,duration=10100301818,event=after_success[0K
+Done. Your build exited with 0.
