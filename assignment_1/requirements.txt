@@ -1,0 +1,8 @@
+python-dotenv
+slackclient
+flask
+slackeventsapi
+pyenchant
+truecase
+geonamescache
+spacy

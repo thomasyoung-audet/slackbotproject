@@ -1,8 +1,1 @@
-python-dotenv
-slackclient
-flask
-slackeventsapi
-pyenchant
-truecase
-geonamescache
-spacy
+Flask==0.12
