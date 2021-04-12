@@ -1,0 +1,25 @@
+sudo: required
+language: python
+services:
+- docker
+
+script:
+- docker image build -t imjonlam/cps847 .
+
+after_success:
+  #log in to docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  #take built images and push to DOcker hub
+  - docker push imjonlam/cps847
+  #test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "cps847"
+  env: "cps847-env"
+  bucket_name: "elasticbeanstalk-us-east-1-862341512431"
+  on:
+    branch: main
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
