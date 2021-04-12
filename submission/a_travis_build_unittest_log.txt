@@ -1,0 +1,349 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 63a29a87-88fc-4b77-916e-20403e08bada@1.worker-org-6895d44d89-fk7l2.gce-production-4
+version: 6.2.22 https://github.com/travis-ci/worker/tree/858cb91994a513269f2fe9782c15fc113e966231
+instance: travis-job-6387f945-8f86-44bb-a23e-25698dbb98c8 travis-ci-sardonyx-xenial-1593004276-4d46c6b3 (via amqp)
+startup: 6.041079979s
+travis_fold:end:worker_info[0Ktravis_time:start:08e3db38[0Ktravis_time:end:08e3db38:start=1617891483397566769,finish=1617891483549883859,duration=152317090,event=no_world_writable_dirs[0Ktravis_time:start:1d8e1c6b[0Ktravis_time:end:1d8e1c6b:start=1617891483553004952,finish=1617891483556086530,duration=3081578,event=setup_filter[0Ktravis_time:start:10b61dc5[0Ktravis_time:end:10b61dc5:start=1617891483561118792,finish=1617891483569590942,duration=8472150,event=agent[0Ktravis_time:start:02117c5c[0Ktravis_time:end:02117c5c:start=1617891483572754689,finish=1617891483574845384,duration=2090695,event=check_unsupported[0Ktravis_time:start:11637a84[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build dist: xenial
+Build id: 766346150
+Job id: 766346152
+Runtime kernel version: 4.15.0-1077-gcp
+travis-build version: 091d532a
+[34m[1mBuild image provisioning date and time[0m
+Wed Jun 24 13:36:52 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+3f92a99 https://github.com/travis-ci/travis-cookbooks/tree/3f92a99
+[34m[1mgit version[0m
+git version 2.27.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.42.1 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2019-11-12 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.30, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.13 (Ubuntu 10.13-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Mar 18 2020 14:06:17)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.35.3
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.88
+[34m[1mphpenv version[0m
+rbenv 1.1.2-30-gc879cb0
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.19
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.26
+9.5.22
+9.6.18
+[34m[1mRedis version[0m
+redis-server 6.0.5
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.6 compiled on July 20 2018
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.3 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.21.0
+v11.0.0
+v12.18.1
+v4.9.1
+v6.17.1
+v8.12.0
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:11637a84:start=1617891483577681843,finish=1617891483583059445,duration=5377602,event=show_system_info[0Ktravis_time:start:1758f090[0Ktravis_time:end:1758f090:start=1617891483586028526,finish=1617891483615128013,duration=29099487,event=rm_riak_source[0Ktravis_time:start:026b7b40[0Ktravis_time:end:026b7b40:start=1617891483628135338,finish=1617891483653182551,duration=25047213,event=fix_rwky_redis[0Ktravis_time:start:093536d9[0Ktravis_time:end:093536d9:start=1617891483657724259,finish=1617891484275041410,duration=617317151,event=wait_for_network[0Ktravis_time:start:2364fb5b[0Ktravis_time:end:2364fb5b:start=1617891484280041978,finish=1617891484501731151,duration=221689173,event=update_apt_keys[0Ktravis_time:start:0f9d0e36[0Ktravis_time:end:0f9d0e36:start=1617891484507181082,finish=1617891484566750249,duration=59569167,event=fix_hhvm_source[0Ktravis_time:start:02a79235[0Ktravis_time:end:02a79235:start=1617891484571425734,finish=1617891484575665426,duration=4239692,event=update_mongo_arch[0Ktravis_time:start:0bc93780[0Ktravis_time:end:0bc93780:start=1617891484580136867,finish=1617891484624121238,duration=43984371,event=fix_sudo_enabled_trusty[0Ktravis_time:start:185b813e[0Ktravis_time:end:185b813e:start=1617891484628677738,finish=1617891484632021986,duration=3344248,event=update_glibc[0Ktravis_time:start:01264f9b[0Ktravis_time:end:01264f9b:start=1617891484636645323,finish=1617891484645163269,duration=8517946,event=clean_up_path[0Ktravis_time:start:027b3484[0Ktravis_time:end:027b3484:start=1617891484649766528,finish=1617891484658899860,duration=9133332,event=fix_resolv_conf[0Ktravis_time:start:0b370e69[0Ktravis_time:end:0b370e69:start=1617891484663635262,finish=1617891484673681621,duration=10046359,event=fix_etc_hosts[0Ktravis_time:start:000e6996[0Ktravis_time:end:000e6996:start=1617891484678521333,finish=1617891484689652063,duration=11130730,event=fix_mvn_settings_xml[0Ktravis_time:start:13d4b38d[0Ktravis_time:end:13d4b38d:start=1617891484693236774,finish=1617891484702738711,duration=9501937,event=no_ipv6_localhost[0Ktravis_time:start:09486d2d[0Ktravis_time:end:09486d2d:start=1617891484706590158,finish=1617891484709197471,duration=2607313,event=fix_etc_mavenrc[0Ktravis_time:start:33dfb440[0Ktravis_time:end:33dfb440:start=1617891484713190009,finish=1617891484716292712,duration=3102703,event=fix_wwdr_certificate[0Ktravis_time:start:0588bfee[0Ktravis_time:end:0588bfee:start=1617891484719865970,finish=1617891484743838724,duration=23972754,event=put_localhost_first[0Ktravis_time:start:11ce0ae8[0Ktravis_time:end:11ce0ae8:start=1617891484748061174,finish=1617891484751068099,duration=3006925,event=home_paths[0Ktravis_time:start:01db59b0[0Ktravis_time:end:01db59b0:start=1617891484755334633,finish=1617891484767750173,duration=12415540,event=disable_initramfs[0Ktravis_time:start:001f0d38[0Ktravis_time:end:001f0d38:start=1617891484772194689,finish=1617891485055898969,duration=283704280,event=disable_ssh_roaming[0Ktravis_time:start:2011759b[0Ktravis_time:end:2011759b:start=1617891485060212384,finish=1617891485062724533,duration=2512149,event=debug_tools[0Ktravis_time:start:21d11264[0Ktravis_time:end:21d11264:start=1617891485066841615,finish=1617891485070020369,duration=3178754,event=uninstall_oclint[0Ktravis_time:start:0e2c8a08[0Ktravis_time:end:0e2c8a08:start=1617891485074150771,finish=1617891485077212438,duration=3061667,event=rvm_use[0Ktravis_time:start:07a304ea[0Ktravis_time:end:07a304ea:start=1617891485081528505,finish=1617891485090476839,duration=8948334,event=rm_etc_boto_cfg[0Ktravis_time:start:207812dc[0Ktravis_time:end:207812dc:start=1617891485094654749,finish=1617891485098082337,duration=3427588,event=rm_oraclejdk8_symlink[0Ktravis_time:start:285d931a[0Ktravis_time:end:285d931a:start=1617891485101595181,finish=1617891485202767701,duration=101172520,event=enable_i386[0Ktravis_time:start:03c362f4[0Ktravis_time:end:03c362f4:start=1617891485207312719,finish=1617891485213469470,duration=6156751,event=update_rubygems[0Ktravis_time:start:0119c93e[0Ktravis_time:end:0119c93e:start=1617891485218807327,finish=1617891486025700784,duration=806893457,event=ensure_path_components[0Ktravis_time:start:044bf57e[0Ktravis_time:end:044bf57e:start=1617891486029836003,finish=1617891486032971353,duration=3135350,event=redefine_curl[0Ktravis_time:start:0b90e6b0[0Ktravis_time:end:0b90e6b0:start=1617891486037193655,finish=1617891486134690798,duration=97497143,event=nonblock_pipe[0Ktravis_time:start:1fcd61b0[0Ktravis_time:end:1fcd61b0:start=1617891486138910126,finish=1617891492169485565,duration=6030575439,event=apt_get_update[0Ktravis_time:start:1fd32225[0Ktravis_time:end:1fd32225:start=1617891492175178264,finish=1617891492177903504,duration=2725240,event=deprecate_xcode_64[0Ktravis_time:start:01bd0414[0Ktravis_time:end:01bd0414:start=1617891492181837695,finish=1617891495035523302,duration=2853685607,event=update_heroku[0Ktravis_time:start:04a4df43[0Ktravis_time:end:04a4df43:start=1617891495040431644,finish=1617891495043565494,duration=3133850,event=shell_session_update[0Ktravis_time:start:0cf64093[0Ktravis_fold:start:docker_mtu_and_registry_mirrors[0Ktravis_fold:end:docker_mtu_and_registry_mirrors[0Ktravis_time:end:0cf64093:start=1617891495048529981,finish=1617891497654622777,duration=2606092796,event=set_docker_mtu_and_registry_mirrors[0Ktravis_time:start:220249aa[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:220249aa:start=1617891497660008132,finish=1617891497736911033,duration=76902901,event=resolvconf[0Ktravis_time:start:0bf63ce0[0Ktravis_time:end:0bf63ce0:start=1617891497747612843,finish=1617891497897331635,duration=149718792,event=maven_central_mirror[0Ktravis_time:start:184ee376[0Ktravis_time:end:184ee376:start=1617891497901604929,finish=1617891497988054237,duration=86449308,event=maven_https[0Ktravis_time:start:0a3061ac[0Ktravis_time:end:0a3061ac:start=1617891497994481991,finish=1617891497997336772,duration=2854781,event=fix_ps4[0Ktravis_time:start:00d83d74[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:12148fb6[0K$ git clone --depth=50 --branch=main https://github.com/thomasyoung-audet/slackbotproject.git thomasyoung-audet/slackbotproject
+Cloning into 'thomasyoung-audet/slackbotproject'...
+travis_time:end:12148fb6:start=1617891498006041506,finish=1617891498565958987,duration=559917481,event=checkout[0K$ cd thomasyoung-audet/slackbotproject
+$ git checkout -qf f864147dfcd355ca78a78f0500a7cabbc1e19ae3
+travis_fold:end:git.checkout[0K
+travis_time:end:12148fb6:start=1617891498006041506,finish=1617891498579672723,duration=573631217,event=checkout[0Ktravis_time:start:11ba68ec[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export CODECOV_TOKEN=[secure]
+
+travis_time:end:11ba68ec:start=1617891498585044649,finish=1617891498592278850,duration=7234201,event=env[0Ktravis_time:start:0735114e[0K$ source ~/virtualenv/python3.7/bin/activate
+travis_time:end:0735114e:start=1617891498595666446,finish=1617891498602224901,duration=6558455,event=[0K$ python --version
+Python 3.7.1
+$ pip --version
+pip 20.1.1 from /home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/pip (python 3.7)
+travis_fold:start:install.1[0Ktravis_time:start:14919789[0K$ pip install -r requirements.txt
+Collecting python-dotenv
+  Downloading python_dotenv-0.17.0-py2.py3-none-any.whl (18 kB)
+Collecting slackclient
+  Downloading slackclient-2.9.3-py2.py3-none-any.whl (96 kB)
+Collecting flask
+  Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
+Collecting slackeventsapi
+  Downloading slackeventsapi-2.2.1-py2.py3-none-any.whl (7.1 kB)
+Collecting pyenchant
+  Downloading pyenchant-3.2.0-py3-none-any.whl (55 kB)
+Collecting truecase
+  Downloading truecase-0.0.12-py3-none-any.whl (28.4 MB)
+Collecting geonamescache
+  Downloading geonamescache-1.2.0-py3-none-any.whl (2.6 MB)
+Collecting spacy
+  Downloading spacy-3.0.5-cp37-cp37m-manylinux2014_x86_64.whl (12.8 MB)
+Collecting aiohttp<4.0.0,>3.5.2
+  Downloading aiohttp-3.7.4.post0-cp37-cp37m-manylinux2014_x86_64.whl (1.3 MB)
+Collecting Werkzeug>=0.15
+  Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+Collecting itsdangerous>=0.24
+  Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+Collecting click>=5.1
+  Downloading click-7.1.2-py2.py3-none-any.whl (82 kB)
+Collecting Jinja2>=2.10.1
+  Downloading Jinja2-2.11.3-py2.py3-none-any.whl (125 kB)
+Collecting MarkupSafe<2
+  Downloading MarkupSafe-1.1.1-cp37-cp37m-manylinux2010_x86_64.whl (33 kB)
+Collecting pyee<8,>=7
+  Downloading pyee-7.0.4-py2.py3-none-any.whl (12 kB)
+Collecting nltk
+  Downloading nltk-3.6.1-py3-none-any.whl (1.5 MB)
+Collecting catalogue<2.1.0,>=2.0.1
+  Downloading catalogue-2.0.1-py3-none-any.whl (9.6 kB)
+Collecting murmurhash<1.1.0,>=0.28.0
+  Downloading murmurhash-1.0.5-cp37-cp37m-manylinux2014_x86_64.whl (20 kB)
+Collecting tqdm<5.0.0,>=4.38.0
+  Downloading tqdm-4.60.0-py2.py3-none-any.whl (75 kB)
+Collecting pydantic<1.8.0,>=1.7.1
+  Downloading pydantic-1.7.3-cp37-cp37m-manylinux2014_x86_64.whl (9.1 MB)
+Collecting typer<0.4.0,>=0.3.0
+  Downloading typer-0.3.2-py3-none-any.whl (21 kB)
+Collecting requests<3.0.0,>=2.13.0
+  Downloading requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: setuptools in /home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages (from spacy->-r requirements.txt (line 8)) (47.3.1)
+Collecting typing-extensions<4.0.0.0,>=3.7.4; python_version < "3.8"
+  Downloading typing_extensions-3.7.4.3-py3-none-any.whl (22 kB)
+Collecting importlib-metadata>=0.20; python_version < "3.8"
+  Downloading importlib_metadata-3.10.0-py3-none-any.whl (14 kB)
+Collecting wasabi<1.1.0,>=0.8.1
+  Downloading wasabi-0.8.2-py3-none-any.whl (23 kB)
+Collecting thinc<8.1.0,>=8.0.2
+  Downloading thinc-8.0.2-cp37-cp37m-manylinux2014_x86_64.whl (1.1 MB)
+Requirement already satisfied: numpy>=1.15.0 in /home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages (from spacy->-r requirements.txt (line 8)) (1.16.4)
+Collecting packaging>=20.0
+  Downloading packaging-20.9-py2.py3-none-any.whl (40 kB)
+Collecting pathy>=0.3.5
+  Downloading pathy-0.4.0-py3-none-any.whl (36 kB)
+Collecting blis<0.8.0,>=0.4.0
+  Downloading blis-0.7.4-cp37-cp37m-manylinux2014_x86_64.whl (9.8 MB)
+Collecting srsly<3.0.0,>=2.4.0
+  Downloading srsly-2.4.0-cp37-cp37m-manylinux2014_x86_64.whl (456 kB)
+Collecting cymem<2.1.0,>=2.0.2
+  Downloading cymem-2.0.5-cp37-cp37m-manylinux2014_x86_64.whl (35 kB)
+Collecting preshed<3.1.0,>=3.0.2
+  Downloading preshed-3.0.5-cp37-cp37m-manylinux2014_x86_64.whl (126 kB)
+Collecting spacy-legacy<3.1.0,>=3.0.0
+  Downloading spacy_legacy-3.0.2-py2.py3-none-any.whl (7.8 kB)
+Collecting chardet<5.0,>=2.0
+  Downloading chardet-4.0.0-py2.py3-none-any.whl (178 kB)
+Collecting multidict<7.0,>=4.5
+  Downloading multidict-5.1.0-cp37-cp37m-manylinux2014_x86_64.whl (142 kB)
+Collecting async-timeout<4.0,>=3.0
+  Downloading async_timeout-3.0.1-py3-none-any.whl (8.2 kB)
+Requirement already satisfied: attrs>=17.3.0 in /home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages (from aiohttp<4.0.0,>3.5.2->slackclient->-r requirements.txt (line 2)) (19.1.0)
+Collecting yarl<2.0,>=1.0
+  Downloading yarl-1.6.3-cp37-cp37m-manylinux2014_x86_64.whl (294 kB)
+Collecting regex
+  Downloading regex-2021.4.4-cp37-cp37m-manylinux2014_x86_64.whl (720 kB)
+Collecting joblib
+  Downloading joblib-1.0.1-py3-none-any.whl (303 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.4-py2.py3-none-any.whl (153 kB)
+Collecting idna<3,>=2.5
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+Requirement already satisfied: certifi>=2017.4.17 in /home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages (from requests<3.0.0,>=2.13.0->spacy->-r requirements.txt (line 8)) (2019.3.9)
+Requirement already satisfied: zipp>=0.5 in /home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages (from importlib-metadata>=0.20; python_version < "3.8"->spacy->-r requirements.txt (line 8)) (0.5.1)
+Requirement already satisfied: pyparsing>=2.0.2 in /home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages (from packaging>=20.0->spacy->-r requirements.txt (line 8)) (2.4.0)
+Collecting smart-open<4.0.0,>=2.2.0
+  Downloading smart_open-3.0.0.tar.gz (113 kB)
+Building wheels for collected packages: smart-open
+  Building wheel for smart-open (setup.py): started
+  Building wheel for smart-open (setup.py): finished with status 'done'
+  Created wheel for smart-open: filename=smart_open-3.0.0-py3-none-any.whl size=107097 sha256=f72dad3de59080f588c11f12bc7f33feeaf0391acccfec2f8cc555e12756a4d5
+  Stored in directory: /home/travis/.cache/pip/wheels/83/a6/12/bf3c1a667bde4251be5b7a3368b2d604c9af2105b5c1cb1870
+Successfully built smart-open
+Installing collected packages: python-dotenv, chardet, multidict, async-timeout, typing-extensions, idna, yarl, aiohttp, slackclient, Werkzeug, itsdangerous, click, MarkupSafe, Jinja2, flask, pyee, slackeventsapi, pyenchant, regex, joblib, tqdm, nltk, truecase, geonamescache, importlib-metadata, catalogue, murmurhash, pydantic, typer, urllib3, requests, wasabi, blis, srsly, cymem, preshed, thinc, packaging, smart-open, pathy, spacy-legacy, spacy
+  Attempting uninstall: importlib-metadata
+    Found existing installation: importlib-metadata 0.18
+    Uninstalling importlib-metadata-0.18:
+      Successfully uninstalled importlib-metadata-0.18
+  Attempting uninstall: packaging
+    Found existing installation: packaging 19.0
+    Uninstalling packaging-19.0:
+      Successfully uninstalled packaging-19.0
+Successfully installed Jinja2-2.11.3 MarkupSafe-1.1.1 Werkzeug-1.0.1 aiohttp-3.7.4.post0 async-timeout-3.0.1 blis-0.7.4 catalogue-2.0.1 chardet-4.0.0 click-7.1.2 cymem-2.0.5 flask-1.1.2 geonamescache-1.2.0 idna-2.10 importlib-metadata-3.10.0 itsdangerous-1.1.0 joblib-1.0.1 multidict-5.1.0 murmurhash-1.0.5 nltk-3.6.1 packaging-20.9 pathy-0.4.0 preshed-3.0.5 pydantic-1.7.3 pyee-7.0.4 pyenchant-3.2.0 python-dotenv-0.17.0 regex-2021.4.4 requests-2.25.1 slackclient-2.9.3 slackeventsapi-2.2.1 smart-open-3.0.0 spacy-3.0.5 spacy-legacy-3.0.2 srsly-2.4.0 thinc-8.0.2 tqdm-4.60.0 truecase-0.0.12 typer-0.3.2 typing-extensions-3.7.4.3 urllib3-1.26.4 wasabi-0.8.2 yarl-1.6.3
+travis_time:end:14919789:start=1617891499074362796,finish=1617891515691561452,duration=16617198656,event=install[0Ktravis_fold:end:install.1[0Ktravis_fold:start:install.2[0Ktravis_time:start:0abd477e[0K$ pip install coverage
+Collecting coverage
+  Downloading coverage-5.5-cp37-cp37m-manylinux2010_x86_64.whl (242 kB)
+Installing collected packages: coverage
+Successfully installed coverage-5.5
+travis_time:end:0abd477e:start=1617891515696741498,finish=1617891517183838396,duration=1487096898,event=install[0Ktravis_fold:end:install.2[0Ktravis_time:start:0a306428[0K$ coverage run unittest_flaskapi.py
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.011s
+
+OK
+Yes
+Yes
+Yes
+application/json
+Yes
+travis_time:end:0a306428:start=1617891517189111565,finish=1617891517539015519,duration=349903954,event=script[0K[32;1mThe command "coverage run unittest_flaskapi.py" exited with 0.[0m
+
+travis_fold:start:after_success[0Ktravis_time:start:0708a7ec[0K$ bash <(curl -s https://codecov.io/bash)
+
+  _____          _
+ / ____|        | |
+| |     ___   __| | ___  ___ _____   __
+| |    / _ \ / _` |/ _ \/ __/ _ \ \ / /
+| |___| (_) | (_| |  __/ (_| (_) \ V /
+ \_____\___/ \__,_|\___|\___\___/ \_/
+                              Bash-20210309-2b87ace
+
+
+[0;36m==>[0m git version 2.27.0 found
+[0;36m==>[0m curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtmp rtsp smb smbs smtp smtps telnet tftp 
+Features: AsynchDNS IDN IPv6 Largefile GSS-API Kerberos SPNEGO NTLM NTLM_WB SSL libz TLS-SRP UnixSockets 
+[0;90m==>[0m Travis CI detected.
+    [0;90mproject root:[0m .
+[0;90m-->[0m token set from env
+    [0;32mYaml not found, that's ok! Learn more at[0m [0;36mhttp://docs.codecov.io/docs/codecov-yaml[0m
+[0;90m==>[0m Running gcov in . [0;90m(disable via -X gcov)[0m
+[0;90m==>[0m Python coveragepy exists [0;90mdisable via -X coveragepy[0m
+    [0;90m->[0m Running coverage xml
+[0;90m==>[0m Searching for coverage reports in:
+    [0;32m+[0m .
+    [0;90m->[0m Found 1 reports
+[0;90m==>[0m Detecting git/mercurial file structure
+[0;90m==>[0m Appending build variables
+    [0;32m+[0m TRAVIS_OS_NAME
+    [0;32m+[0m 3.7
+[0;90m==>[0m Reading reports
+    [0;32m+[0m ./coverage.xml [0;90mbytes=713265[0m
+[0;90m==>[0m Appending adjustments
+    [0;36mhttps://docs.codecov.io/docs/fixing-reports[0m
+    [0;90m->[0m No adjustments found
+[0;90m==>[0m Gzipping contents
+        48K	/tmp/codecov.wExbrc.gz
+[0;90m==>[0m Uploading reports
+    [0;90murl:[0m https://codecov.io
+    [0;90mquery:[0m branch=main&commit=f864147dfcd355ca78a78f0500a7cabbc1e19ae3&build=6.2&build_url=&name=&tag=&slug=thomasyoung-audet%2Fslackbotproject&service=travis&flags=&pr=false&job=766346152&cmd_args=
+[0;90m->[0m  Pinging Codecov
+https://codecov.io/upload/v4?package=bash-20210309-2b87ace&token=secret&branch=main&commit=f864147dfcd355ca78a78f0500a7cabbc1e19ae3&build=6.2&build_url=&name=&tag=&slug=thomasyoung-audet%2Fslackbotproject&service=travis&flags=&pr=false&job=766346152&cmd_args=
+[0;90m->[0m  Uploading to
+https://storage.googleapis.com/codecov/v4/raw/2021-04-08/AD3A47CF7543F97BC5482597345F81EE/f864147dfcd355ca78a78f0500a7cabbc1e19ae3/c6c8b426-6ce6-4674-b685-86fd256f74a8.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=GOOG1EQM3VGPYSAFECJRMNAFIPCV2R3P2BOORCJC7NM537NPJQSFLHUDNIDWA%2F20210408%2FUS%2Fs3%2Faws4_request&X-Amz-Date=20210408T141840Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=bc591f36c8da8d107505bdeee673acf556c32eb23b6c6c815b83d29d1998c4f5
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 48231    0     0  100 48231      0   238k --:--:-- --:--:-- --:--:--  239k
+    [0;32m->[0m Reports have been successfully queued for processing at [0;36mhttps://codecov.io/github/thomasyoung-audet/slackbotproject/commit/f864147dfcd355ca78a78f0500a7cabbc1e19ae3[0m
+travis_time:end:0708a7ec:start=1617891517544190424,finish=1617891520551015485,duration=3006825061,event=after_success[0Ktravis_fold:end:after_success[0K
+Done. Your build exited with 0.

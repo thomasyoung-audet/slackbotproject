@@ -1,12 +1,12 @@
 FROM python:3.6.1
-# define the present working directory
+
+# copy repository contents to wkdir
 WORKDIR /docker_group_40
-# copy the contents into the working dir
 ADD . /docker_group_40
-# run pip to install the dependencies of the flask app
+
+# install python requirements
 RUN pip install -r requirements.txt
-# define the command to start the container
 
+# python script to serve index.html
 EXPOSE 5000
-
 CMD ["python","app.py"]
