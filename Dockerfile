@@ -5,7 +5,7 @@ WORKDIR /docker_group_40
 ADD . /docker_group_40
 
 # install python requirements
-RUN pip install -r requirements.txt
+RUN pip install -r ebs_requirements.txt
 
 # python script to serve index.html
 EXPOSE 5000
