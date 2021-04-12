@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 
 # python script to serve index.html
 EXPOSE 5000
-CMD ["python","app.py"]
+CMD ["python","ebs_app.py"]
